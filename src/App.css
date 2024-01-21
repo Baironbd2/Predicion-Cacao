@@ -1,0 +1,23 @@
+
+
+/* Estilos comunes para todas las resoluciones 
+
+*/
+.el-card-item {
+  text-align: center;
+  padding: 5rem;
+}
+
+/* Estilos específicos para resoluciones más pequeñas */
+@media (max-width: 768px) {
+  .el-card-item {
+    padding: 2rem;
+  }
+}
+
+/* Estilos específicos para resoluciones más grandes */
+@media (min-width: 1200px) {
+  .el-card-item {
+    padding: 8rem;
+  }
+}

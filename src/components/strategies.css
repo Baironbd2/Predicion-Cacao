@@ -1,0 +1,52 @@
+.pricing {
+  width: 100%;
+  margin: 6rem, 1fr;
+  position: relative;
+}
+body {
+  margin-top: 8rem;
+}
+.card-conteiner {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.datos-card{
+ border: 1px solid #100f0f;
+ color: #000000;
+ text-align: center;
+ padding: 1rem;
+}
+.datos-card p {
+  padding: 10px 0 ;
+} 
+
+.bar{
+  border-bottom: 5px solid #7cc2c0;
+  width: 20%;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.datos-card:hover{
+  background-color: #0a0a0a;
+  color: #f9f9f9;
+}
+
+.btc{
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 740px) {
+  .card-conteiner {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    
+  }
+}

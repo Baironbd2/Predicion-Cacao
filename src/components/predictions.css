@@ -1,0 +1,156 @@
+.card {
+  width: 100%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #6e6b6b;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+.pricing {
+  width: 100%;
+  margin: 6rem, 1fr;
+  position: relative;
+}
+body {
+  margin-top: 8rem;
+}
+.card-conteiner {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.datos-card{
+ border: 1px solid #100f0f;
+ color: #000000;
+ text-align: center;
+ padding: 1rem;
+}
+.datos-card p {
+  padding: 10px 0 ;
+} 
+
+.bar{
+  border-bottom: 5px solid #7cc2c0;
+  width: 20%;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.datos-card:hover{
+  background-color: #0a0a0a;
+  color: #f9f9f9;
+}
+
+.btc{
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 740px) {
+  .card-conteiner {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    
+  }
+}
+/*--------------------------------------------------*/
+.cardform {
+  margin: auto;
+  max-width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(81, 39, 39, 0.4);
+}
+
+.card-body {
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.form-group {
+  margin-bottom: 3%;
+}
+
+.form-horizontal .form-group {
+  margin-right: 15%;
+  margin-left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+
+
+.form-control {
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  border: 2px solid #ced4da;
+  border-radius: 0.50rem;
+  
+}
+
+.form-control[readonly] {
+  background-color: #03d2d9;
+}
+
+.border-top {
+  border-top: 2px solid #000000;
+}
+
+.card-body:last-child {
+  padding-bottom: 3%;
+}
+
+.btn {
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  height: 40px;
+  position: relative;
+  width: 170px;
+
+}
+
+.btn:hover {
+  border-radius: 2rem;
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #111213;
+}
+
+@media (max-width: 576px) {
+  .form-horizontal .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-group.row {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .cardform {
+    margin: auto;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(81, 39, 39, 0.4);
+  }
+
+  .col-sm-3,
+  .col-sm-6 {
+    max-width: 50%;
+  }
+}
+
+
